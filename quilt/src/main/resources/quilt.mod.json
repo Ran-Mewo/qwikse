@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "metadata": {
+      "contact": {
+        "sources": "https://github.com/Ran-helo/qwiksie",
+        "issues": "https://github.com/Ran-helo/qwiksie/issues"
+      },
+      "license": "MIT",
+      "icon": "assets/qwikse/icon.png",
+      "contributors": {
+        "Ran": "Developer"
+      }
+    },
+    "group": "${group}",
+    "id": "qwikse",
+    "version": "${version}",
+    "name": "qwikse",
+    "description": "Universal API Loader",
+    "authors": ["Ran"],
+    "contact": {
+      "sources": "https://github.com/Ran-helo/qwiksie",
+      "issues": "https://github.com/Ran-helo/qwiksie/issues"
+    },
+    "license": "MIT",
+    "icon": "assets/qwikse/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "language_adapters": {
+      "qwikse:loadReallyEarly": "io.github.ran.qwikse.quilt.QwikseLoader"
+    },
+    "entrypoints": {},
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      }
+    ]
+  }
+}

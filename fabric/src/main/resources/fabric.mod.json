@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "qwikse",
+  "version": "${version}",
+  "name": "qwikse",
+  "description": "Universal API Loader",
+  "authors": [
+    "Ran"
+  ],
+  "contact": {
+    "sources": "https://github.com/Ran-helo/qwiksie",
+    "issues": "https://github.com/Ran-helo/qwiksie/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/qwikse/icon.png",
+  "environment": "*",
+  "languageAdapters": {
+    "qwikse:loadReallyEarly": "io.github.ran.qwikse.fabric.QwikseLoader"
+  },
+  "entrypoints": {},
+  "depends": {
+    "fabricloader": "*"
+  },
+  "modmenu": {
+    "badges": [
+      "library"
+    ]
+  }
+}
