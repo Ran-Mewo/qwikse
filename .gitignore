@@ -8,6 +8,8 @@ out/
 output/
 bin/
 libs/
+logs/
+Merged/
 
 .classpath
 .project
