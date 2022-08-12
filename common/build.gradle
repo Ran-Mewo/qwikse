@@ -13,8 +13,6 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${rootProject.fabric_loader_version}"
     // Remove the next line if you don't want to depend on the API
     modApi "dev.architectury:architectury:${rootProject.architectury_version}"
-
-    shade 'com.github.Minemobs:ModrinthJavaLib:4d826e6090'
 }
 
 publishing {
