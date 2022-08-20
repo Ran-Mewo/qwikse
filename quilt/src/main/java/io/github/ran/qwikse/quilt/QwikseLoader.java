@@ -142,13 +142,13 @@ public class QwikseLoader implements LanguageAdapter {
         List<Boolean> newModLoaded = new ArrayList<>();
 
         if (QuiltLoader.getModContainer("quilted_fabric_api").isEmpty()) {
-            LOGGER.info("Downloading QSL for " + mcVersion + "...");
+            LOGGER.info("Downloading Quilt Standard Libraries for " + mcVersion + "...");
             URL url = getDownloadURL("qvIfYCYJ", mcVersion, "quilt");
             if (url != null) {
                 WGet wget = new WGet(url, modsDir);
                 wget.download();
             } else {
-                LOGGER.error("Could not find QSL for " + mcVersion);
+                LOGGER.error("Could not find Quilt Standard Libraries for " + mcVersion);
             }
             newModLoaded.add(true);
         }
@@ -173,6 +173,18 @@ public class QwikseLoader implements LanguageAdapter {
                 wget.download();
             } else {
                 LOGGER.error("Could not find Architectury API for " + mcVersion);
+            }
+            newModLoaded.add(true);
+        }
+
+        if (QuiltLoader.getModContainer("qkl").isEmpty()) {
+            LOGGER.info("Downloading Quilt Kotlin Libraries for " + mcVersion + "...");
+            URL url = getDownloadURL("LwVhp9o5", mcVersion, "quilt");
+            if (url != null) {
+                WGet wget = new WGet(url, modsDir);
+                wget.download();
+            } else {
+                LOGGER.error("Could not find Quilt Kotlin Libraries for " + mcVersion);
             }
             newModLoaded.add(true);
         }

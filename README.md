@@ -33,7 +33,7 @@ repositories {
 
 dependencies {
     // ...
-    include "maven.modrinth:qwikse:1.0.0"
+    include "maven.modrinth:qwikse:1.0.1"
     // ...
 }
 ```
