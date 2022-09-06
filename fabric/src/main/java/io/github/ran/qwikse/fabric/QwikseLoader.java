@@ -207,6 +207,34 @@ public class QwikseLoader implements LanguageAdapter {
             newModLoaded.add(true);
         }
 
+        if (FabricLoader.getInstance().getModContainer("forgeconfigapiport").isEmpty()) {
+            LOGGER.info("Downloading Forge Config API Port for " + mcVersion + "...");
+            URL url = getDownloadURL("ohNO6lps", mcVersion, "quilt");
+            if (url != null) {
+                WGet wget = new WGet(url, modsDir);
+                wget.download();
+            } else {
+                LOGGER.error("Could not find Forge Config API Port for " + mcVersion);
+            }
+            newModLoaded.add(true);
+        }
+
+        if (FabricLoader.getInstance().getModContainer("porting_lib").isEmpty()) {
+            LOGGER.info("Downloading Porting Lib for " + mcVersion + "...");
+            try {
+                URL url = getPortingLibCreateURL(mcVersion);
+                if (url != null) {
+                    WGet wget = new WGet(url, modsDir);
+                    wget.download();
+                } else {
+                    LOGGER.error("Could not find Porting Lib for " + mcVersion);
+                }
+            } catch (Exception e) {
+                LOGGER.error("Could not find Porting Lib for " + mcVersion);
+            }
+            newModLoaded.add(true);
+        }
+
 
 
 

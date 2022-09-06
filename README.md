@@ -5,9 +5,11 @@ The mod downloads all the APIs based on the Minecraft version
 
 Currently downloads:
 - [Quilt Standard Libraries](https://modrinth.com/mod/qsl) or [Fabric API](https://modrinth.com/mod/fabric-api)
-- Quilt Kotlin Libraries (when it's released on modrinth) or [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)
+- [Quilt Kotlin Libraries](https://modrinth.com/mod/qkl) or [Fabric Language Kotlin](https://modrinth.com/mod/fabric-language-kotlin)
 - [Architectury API](https://modrinth.com/mod/architectury-api)
 - [Cloth Config](https://modrinth.com/mod/cloth-config)
+- [Forge Config API Port](https://modrinth.com/mod/forge-config-api-port)
+- [Porting Lib](https://github.com/Fabricators-of-Create/Porting-Lib)
 
 It will only download if the mod doesn't exist
 
@@ -33,7 +35,7 @@ repositories {
 
 dependencies {
     // ...
-    include "maven.modrinth:qwikse:1.0.1"
+    include "maven.modrinth:qwikse:1.1.0"
     // ...
 }
 ```
